@@ -6,7 +6,6 @@ import './CardDeck.css'
 
 
 const CardDeck = () => {
-
     const cards = [
         './img/card/card_detail_101686_C.png',
         './img/card/card_detail_101686_D.png',
@@ -41,6 +40,7 @@ const CardDeck = () => {
             })
             if (!down && gone.size === cards.length) setTimeout(() => gone.clear() || set((i) => to(i)), 600)
         })
+       
         
         // Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
         return props.map(({ x, y, rot, scale }, i) => (
@@ -50,7 +50,7 @@ const CardDeck = () => {
             </animated.div> 
         ))
     }
-    render(<Deck />, document.getElementById('root')) 
+    render(<Deck />, document.getElementById('card')) 
     
 }
 

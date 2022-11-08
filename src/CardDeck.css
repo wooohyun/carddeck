@@ -2,21 +2,10 @@
     box-sizing: border-box;
   }
   
-  html,
-  body {
-    overscroll-behavior-y: contain;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    user-select: none;
-    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial,
-      sans-serif;
-    position: fixed;
-    overflow: hidden;
-  }
+
+
   
-  #root {
+  #card {
 /* 배경은 들어가는곳보고 맞춰서 적어넣자 */
     background: lightblue;
     position: fixed;
@@ -26,7 +15,7 @@
     cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 39 39, auto;
   }
   
-  #root > div {
+  #card > div {
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -38,7 +27,7 @@
   
 
   /* 카드 개별크기설정 */
-  #root > div > div {
+  #card > div > div {
     background-color: white;
     background-size: auto 100%;
     background-repeat: no-repeat;
